@@ -6,6 +6,9 @@
   "bugs": {
     "url": "https://github.com/blopa/gatsby-remark-local-videos/issues"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "dependencies": {
     "@babel/runtime": "7.11.2",
     "bluebird": "^3.7.2",
@@ -31,11 +34,17 @@
   "peerDependencies": {
     "gatsby": ">2.24.57"
   },
-  "repository": "https://github.com/blopa/gatsby-remark-local-videos",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blopa/gatsby-remark-local-videos.git"
+  },
   "scripts": {
     "build": "babel src --out-dir lib",
     "prepare": "cross-env NODE_ENV=production npm run build",
     "watch": "babel -w src --out-dir lib",
     "prepublish": "npm run build"
+  },
+  "directories": {
+    "lib": "lib"
   }
 }
