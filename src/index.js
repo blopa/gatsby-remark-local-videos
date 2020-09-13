@@ -1,4 +1,4 @@
-const select = require('unist-util-select').select;
+const select = require('unist-util-select').selectAll;
 const isRelativeUrl = require('is-relative-url');
 const Promise = require('bluebird');
 
@@ -9,7 +9,7 @@ module.exports = (
     pluginOptions
 ) => {
     // This will only work for markdown syntax image tags
-    const markdownVideoNodes = select(markdownAST, 'image');
+    const markdownVideoNodes = select('image', markdownAST);
 
     // Takes a node and generates the needed videos and then returns
     // the needed HTML replacement for the video
