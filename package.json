@@ -1,7 +1,7 @@
 {
   "name": "gatsby-remark-local-videos",
   "description": "Embed local videos.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "blopa",
   "bugs": {
     "url": "https://github.com/blopa/gatsby-remark-local-videos/issues"
