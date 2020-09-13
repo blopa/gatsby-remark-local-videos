@@ -1,4 +1,4 @@
-const select = require('unist-util-select');
+const select = require('unist-util-select').select;
 const isRelativeUrl = require('is-relative-url');
 const Promise = require('bluebird');
 
